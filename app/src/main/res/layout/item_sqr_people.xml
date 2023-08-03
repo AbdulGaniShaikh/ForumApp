@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    android:elevation="5dp"
+    app:cardCornerRadius="5dp">
+
+    <LinearLayout
+        android:id="@+id/con_sqr_people"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:gravity="center"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground">
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/avatar_sqr_people"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_avat1"
+            android:background="@color/browser_actions_bg_grey"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/CircleShape"/>
+        <TextView
+            android:id="@+id/name_sqr_people"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textSize="14sp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:paddingTop="5dp"
+            android:paddingHorizontal="5dp"/>
+        <TextView
+            android:id="@+id/mail_sqr_people"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mail"
+            android:textSize="14sp"
+            android:textAlignment="center"
+            />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

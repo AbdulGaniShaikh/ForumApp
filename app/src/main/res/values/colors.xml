@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="primaryLightColor">#5ed5ff</color>
+    <color name="primaryColor">#00a4cc</color>
+<!--    <color name="primaryDarkColor">#00759b</color>-->
+
+<!--    <color name="primaryLightColor">#F6F6F6</color>-->
+<!--    <color name="primaryColor">#0E0E0E</color>-->
+    <color name="primaryDarkColor">#F6F6F6</color>
+
+    <color name="secondaryLightColor">#ffff55</color>
+    <color name="secondaryColor">#FDD20E</color>
+    <color name="secondaryDarkColor">#c5a100</color>
+
+</resources>

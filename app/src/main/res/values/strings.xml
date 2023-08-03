@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Forum App</string>
+    <string name="dont_have_account">Don\'t Have Account? Sign Up</string>
+    <string name="hello_home_fragment">Hello Home fragment</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="category">Category</string>
+
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+
+    <string-array name="visibiltyArray">
+        <item>Public</item>
+        <item>Private</item>
+    </string-array>
+
+    <string-array name="categoriesArray">
+        <item>Arts</item>
+        <item>Business</item>
+        <item>Cartoon</item>
+        <item>Computer</item>
+        <item>Daily Life</item>
+        <item>Farming</item>
+        <item>Gaming</item>
+        <item>Geography</item>
+        <item>Health</item>
+        <item>History</item>
+        <item>Information Technology</item>
+        <item>Meme</item>
+        <item>Movie</item>
+        <item>Music</item>
+        <item>Politics</item>
+        <item>Psychology</item>
+        <item>Science</item>
+        <item>Scientific Research</item>
+        <item>Sports</item>
+    </string-array>
+</resources>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityUserProfile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/img_backprof"
+            android:scaleType="centerCrop"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/avatar_user_profile"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_avat1"
+            android:contentDescription="Avatar"
+            android:backgroundTint="@color/browser_actions_bg_grey"
+            app:shapeAppearanceOverlay="@style/CircleShape"
+            android:elevation="10dp"
+            android:layout_marginTop="-75dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/username_user_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tehgan"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textSize="22sp" />
+        <TextView
+            android:id="@+id/mail_user_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="shkhabdulgani@gmail.com"
+            android:textAlignment="center"
+            android:textSize="18sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/follow_btn_user_profile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Add Friend"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:padding="5dp"
+                android:background="@drawable/shape_allradius"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                />
+            <TextView
+                android:id="@+id/message_user_profile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Message"
+                android:textAlignment="center"
+                android:padding="5dp"
+                android:background="@drawable/shape_border_radius"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/browser_actions_bg_grey"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+            <LinearLayout
+                android:id="@+id/friends_con_user_profile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toStartOf="@+id/view"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                >
+
+                <TextView
+                    android:id="@+id/friends_user_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="420"
+                    android:textColor="@color/black"
+                    android:textSize="22sp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Friends"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="2dp"
+                android:layout_height="0dp"
+                android:background="@color/browser_actions_bg_grey"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+
+            <LinearLayout
+                android:id="@+id/topic_con_user_profile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/view"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground">
+
+                <TextView
+                    android:id="@+id/topic_user_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="69"
+                    android:textColor="@color/black"
+                    android:textSize="22sp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Following Topic"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/browser_actions_bg_grey"
+            android:layout_marginHorizontal="10dp"/>
+    </LinearLayout>
+</ScrollView>

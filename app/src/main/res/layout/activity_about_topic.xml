@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityAboutTopic"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar_about"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="About Topic"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <ImageView
+            android:id="@+id/img_about"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Topic Name"/>
+        <TextView
+            android:id="@+id/name_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gaming as as career"
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/desp_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DESP"
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Category"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/category_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Arts"
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Created By"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/createdby_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tehgan"
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Created On"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/createdon_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12:12 pm, 12 Aug 2021"
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Followers"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/followers_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10 followers"
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+</LinearLayout>

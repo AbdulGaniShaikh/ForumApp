@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FragmentProfile"
+    tools:ignore="HardcodedText">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/img_backprof"
+            android:scaleType="centerCrop"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/avatar_profile"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_avat1"
+            android:contentDescription="Avatar"
+            app:shapeAppearanceOverlay="@style/CircleShape"
+            android:elevation="10dp"
+            android:layout_marginTop="-75dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/username_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tehgan"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:layout_marginVertical="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:id="@+id/con_fr_profile"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_weight="1"
+                android:foreground="?attr/selectableItemBackground">
+
+                <TextView
+                    android:id="@+id/friends_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="69"
+                    android:textColor="@color/black"
+                    android:textSize="22sp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Friends"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground">
+
+                <TextView
+                    android:id="@+id/following_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="420"
+                    android:textColor="@color/black"
+                    android:textSize="22sp"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Following\nTopics"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:elevation="5dp">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/browser_actions_bg_grey"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/mytopics_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="My Topics"
+                android:textColor="@color/black"
+                android:drawableTint="@color/black"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:padding="15dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:drawableStartCompat="@drawable/icon_settings"/>
+
+            <TextView
+                android:id="@+id/accountsetting_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Account Settings"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:padding="15dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:drawableStartCompat="@drawable/icon_settings"
+                app:drawableTint="@color/black" />
+            <TextView
+                android:id="@+id/logout_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:padding="15dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:drawableStartCompat="@drawable/icon_logout"
+                app:drawableTint="@android:color/holo_red_light" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

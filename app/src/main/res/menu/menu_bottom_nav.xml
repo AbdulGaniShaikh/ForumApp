@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bottom_navi_home"
+        android:title="Home"
+        android:icon="@drawable/icon_home"/>
+    <item
+        android:id="@+id/bottom_navi_topic"
+        android:title="Topic"
+        android:icon="@drawable/icon_topic"/>
+    <item
+        android:id="@+id/bottom_navi_youranswers"
+        android:title="People"
+        android:icon="@drawable/icon_people"/>
+    <item
+        android:id="@+id/bottom_navi_profile"
+        android:title="Profile"
+        android:icon="@drawable/icon_user"/>
+</menu>
